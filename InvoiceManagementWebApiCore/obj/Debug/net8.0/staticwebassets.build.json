@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zY49k+c42ETsi21pFCyg5wDfX7hHXXeiTeUx7njXSIs=",
+  "Source": "InvoiceManagementWebApiCore",
+  "BasePath": "_content/InvoiceManagementWebApiCore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
