@@ -9,5 +9,7 @@ namespace InvoiceManagementWebApiCore.Model
 
         public DbSet<Category> Categories { get; set; } 
 
+        public DbSet<UserLogin> Users { get; set; }
+
     }
 }
