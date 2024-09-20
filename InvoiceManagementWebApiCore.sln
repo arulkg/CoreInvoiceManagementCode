@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManagementWebApiCore", "InvoiceManagementWebApiCore\InvoiceManagementWebApiCore.csproj", "{DA203218-8298-49F1-8516-791DF1B8DB75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceManagementWebApiCore", "InvoiceManagementWebApiCore\InvoiceManagementWebApiCore.csproj", "{DA203218-8298-49F1-8516-791DF1B8DB75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.BusinbessObjectLayer", "1.BusinbessObjectLayer", "{83D752A6-ECB8-4AB9-93B1-FC2F6F1F1308}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.DataAccessLayer", "2.DataAccessLayer", "{7D17E846-5672-449E-8A49-3E0A987C7C9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.BusinessAccessLayer", "3.BusinessAccessLayer", "{E64EBA48-9C45-48B9-A954-69CE0DFFAF48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.PresentationLayer", "4.PresentationLayer", "{B52BB296-4332-44A0-8B6A-7BC67929C055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{10DBBF44-AC63-4DB8-98B7-CD7567647458}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessObjects", "DataAccessObjects\DataAccessObjects.csproj", "{67CBC868-14CF-4D0B-9012-69B3C7F1FF3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessAccessObjects", "BusinessAccessObjects\BusinessAccessObjects.csproj", "{C6E17E3C-1E9C-44B1-8AC7-B7BD5829231F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +29,27 @@ Global
 		{DA203218-8298-49F1-8516-791DF1B8DB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA203218-8298-49F1-8516-791DF1B8DB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA203218-8298-49F1-8516-791DF1B8DB75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10DBBF44-AC63-4DB8-98B7-CD7567647458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DBBF44-AC63-4DB8-98B7-CD7567647458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DBBF44-AC63-4DB8-98B7-CD7567647458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DBBF44-AC63-4DB8-98B7-CD7567647458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CBC868-14CF-4D0B-9012-69B3C7F1FF3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CBC868-14CF-4D0B-9012-69B3C7F1FF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CBC868-14CF-4D0B-9012-69B3C7F1FF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CBC868-14CF-4D0B-9012-69B3C7F1FF3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E17E3C-1E9C-44B1-8AC7-B7BD5829231F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E17E3C-1E9C-44B1-8AC7-B7BD5829231F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E17E3C-1E9C-44B1-8AC7-B7BD5829231F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E17E3C-1E9C-44B1-8AC7-B7BD5829231F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA203218-8298-49F1-8516-791DF1B8DB75} = {B52BB296-4332-44A0-8B6A-7BC67929C055}
+		{10DBBF44-AC63-4DB8-98B7-CD7567647458} = {83D752A6-ECB8-4AB9-93B1-FC2F6F1F1308}
+		{67CBC868-14CF-4D0B-9012-69B3C7F1FF3D} = {7D17E846-5672-449E-8A49-3E0A987C7C9C}
+		{C6E17E3C-1E9C-44B1-8AC7-B7BD5829231F} = {E64EBA48-9C45-48B9-A954-69CE0DFFAF48}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F063AB5C-991C-4571-BE45-0D6469968D13}

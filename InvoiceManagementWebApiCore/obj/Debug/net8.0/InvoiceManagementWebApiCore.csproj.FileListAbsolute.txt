@@ -35,6 +35,7 @@ C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagemen
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\Serilog.dll
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\Serilog.AspNetCore.dll
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
@@ -125,6 +126,12 @@ C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagemen
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\BusinessAccessObjects.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\BusinessObjects.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\DataAccessObjects.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\BusinessAccessObjects.pdb
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\BusinessObjects.pdb
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\bin\Debug\net8.0\DataAccessObjects.pdb
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\obj\Debug\net8.0\InvoiceManagementWebApiCore.csproj.AssemblyReference.cache
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\obj\Debug\net8.0\InvoiceManagementWebApiCore.GeneratedMSBuildEditorConfig.editorconfig
 C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\obj\Debug\net8.0\InvoiceManagementWebApiCore.AssemblyInfoInputs.cache

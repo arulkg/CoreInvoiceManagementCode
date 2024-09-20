@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Net.Http.Headers;
 using Microsoft.OpenApi.Models;
+using DataAccessObjects;
+using BusinessAccessObjects;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -31,8 +33,12 @@ builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
 }
 ));
 
-builder.Services.AddDbContext<IMG_CoreContext>(options =>
+builder.Services.AddDbContext<IMGCoreDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("IMGCoreConnection")));
+
+builder.Services.AddScoped<ICategoryBAL, CategoryBAL>();
+builder.Services.AddScoped<ICategoryDAO, CategoryDAO>();
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -123,6 +129,10 @@ if (app.Environment.IsDevelopment())
     }
         );
 }
+
+// Register middleware for exception handling
+app.UseMiddleware<InvoiceManagementWebApiCore.Middlewares.ExceptionMiddleware>();
+
 
 app.UseAuthentication();
 app.UseAuthorization();

@@ -1,0 +1,15 @@
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\bin\Debug\net8.0\BusinessObjects.deps.json
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\bin\Debug\net8.0\BusinessObjects.runtimeconfig.json
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\bin\Debug\net8.0\BusinessObjects.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\bin\Debug\net8.0\BusinessObjects.pdb
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\obj\Debug\net8.0\BusinessObjects.csproj.AssemblyReference.cache
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\obj\Debug\net8.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\obj\Debug\net8.0\BusinessObjects.AssemblyInfoInputs.cache
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\obj\Debug\net8.0\BusinessObjects.AssemblyInfo.cs
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\obj\Debug\net8.0\BusinessObjects.csproj.CoreCompileInputs.cache
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\obj\Debug\net8.0\BusinessObjects.sourcelink.json
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\obj\Debug\net8.0\BusinessObjects.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\obj\Debug\net8.0\refint\BusinessObjects.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\obj\Debug\net8.0\BusinessObjects.pdb
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\obj\Debug\net8.0\BusinessObjects.genruntimeconfig.cache
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\BusinessObjects\obj\Debug\net8.0\ref\BusinessObjects.dll

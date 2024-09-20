@@ -1016,6 +1016,19 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Serilog/4.0.0": {
         "type": "package",
         "compile": {
@@ -1846,6 +1859,48 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "BusinessAccessObjects/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BusinessObjects": "1.0.0",
+          "DataAccessObjects": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessAccessObjects.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessAccessObjects.dll": {}
+        }
+      },
+      "BusinessObjects/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/BusinessObjects.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessObjects.dll": {}
+        }
+      },
+      "DataAccessObjects/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BusinessObjects": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataAccessObjects.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessObjects.dll": {}
         }
       }
     }
@@ -3603,6 +3658,36 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Serilog/4.0.0": {
       "sha512": "2jDkUrSh5EofOp7Lx5Zgy0EB+7hXjjxE2ktTb1WVQmU00lDACR2TdROGKU0K1pDTBSJBN1PqgYpgOZF8mL7NJw==",
       "type": "package",
@@ -4945,10 +5030,27 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "BusinessAccessObjects/1.0.0": {
+      "type": "project",
+      "path": "../BusinessAccessObjects/BusinessAccessObjects.csproj",
+      "msbuildProject": "../BusinessAccessObjects/BusinessAccessObjects.csproj"
+    },
+    "BusinessObjects/1.0.0": {
+      "type": "project",
+      "path": "../BusinessObjects/BusinessObjects.csproj",
+      "msbuildProject": "../BusinessObjects/BusinessObjects.csproj"
+    },
+    "DataAccessObjects/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessObjects/DataAccessObjects.csproj",
+      "msbuildProject": "../DataAccessObjects/DataAccessObjects.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BusinessAccessObjects >= 1.0.0",
+      "BusinessObjects >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.8",
       "Microsoft.EntityFrameworkCore >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
@@ -4997,7 +5099,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Core\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\BusinessAccessObjects\\BusinessAccessObjects.csproj": {
+              "projectPath": "C:\\Core\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\BusinessAccessObjects\\BusinessAccessObjects.csproj"
+            },
+            "C:\\Core\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\BusinessObjects\\BusinessObjects.csproj": {
+              "projectPath": "C:\\Core\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\BusinessObjects\\BusinessObjects.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

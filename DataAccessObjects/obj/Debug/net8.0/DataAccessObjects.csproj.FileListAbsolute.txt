@@ -1,0 +1,16 @@
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\bin\Debug\net8.0\DataAccessObjects.deps.json
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\bin\Debug\net8.0\DataAccessObjects.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\bin\Debug\net8.0\DataAccessObjects.pdb
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\bin\Debug\net8.0\BusinessObjects.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\bin\Debug\net8.0\BusinessObjects.pdb
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.csproj.AssemblyReference.cache
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.AssemblyInfoInputs.cache
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.AssemblyInfo.cs
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.csproj.CoreCompileInputs.cache
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.sourcelink.json
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\obj\Debug\net8.0\DataAcce.79975846.Up2Date
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\obj\Debug\net8.0\refint\DataAccessObjects.dll
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.pdb
+C:\Core\InvoiceManagementWebApiCore\InvoiceManagementWebApiCore\DataAccessObjects\obj\Debug\net8.0\ref\DataAccessObjects.dll

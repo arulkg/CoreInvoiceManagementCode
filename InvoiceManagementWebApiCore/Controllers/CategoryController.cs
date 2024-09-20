@@ -1,73 +1,154 @@
-﻿using InvoiceManagementWebApiCore.Model;
-using Microsoft.AspNetCore.Authorization;
+﻿using BusinessAccessObjects;
+using BusinessObjects;
+using InvoiceManagementWebApiCore.Model;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata.Ecma335;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace InvoiceManagementWebApiCore.Controllers
 {
-    //[Authorize]
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly IMG_CoreContext _context;
+        private readonly ICategoryBAL _categoryBAL;
         private readonly ILogger<CategoryController> _logger;
 
-        public CategoryController(IMG_CoreContext context, ILogger<CategoryController> logger)
-        {
-            _context = context;
+        public CategoryController(ICategoryBAL categoryBAL, ILogger<CategoryController> logger)
+        { 
+            _categoryBAL = categoryBAL;
             _logger = logger;
         }
-        
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
+
+        [HttpGet("categories")]
+        public async Task<ActionResult<StandardResponse<List<CategoryObj>>>> GetAll()
         {
-            var categories = await _context.Categories.ToListAsync();
-            if (categories.Any())
+            List<CategoryObj> list = new List<CategoryObj>();
+            try
             {
-                _logger.LogInformation("Retrieved category record total {Count}", categories.Count().ToString());
+                list = await _categoryBAL.GetAll();
+                if (list.Any())
+                {
+                    _logger.LogInformation("Retrieved category record total {Count}", list.Count().ToString());
+                }
             }
-            return Ok(categories);
-        }
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
-        {
-            var category = await _context.Categories.FindAsync(id);
-            if (category == null) return NotFound();
-            _logger.LogInformation("Record found {CategoryName}", category.Name);
-            return Ok(category);
-        }
-        [HttpPost]
-        public async Task<ActionResult> Create(Category category)
-        { 
-            _context.Categories.Add(category);
-            await _context.SaveChangesAsync();
-            _logger.LogInformation("Category created: {CategoryName}", category.Name);
-            return CreatedAtAction(nameof(GetById), new { id = category.Id }, category);
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            return new JsonResult(new StandardResponse<IEnumerable<CategoryObj>>(
+                                    true,
+                                    "200",
+                                    "Retrived all categories success",
+                                    list))
+            {
+                StatusCode = 200
+            };
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, Category category)
+        [HttpGet("GetById/{id}")]
+        public async Task<ActionResult<StandardResponse<CategoryObj>>> GetById(int id)
         {
-            _context.Categories.Entry(category).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-            _logger.LogInformation("Category updated {CategoryName}", category.Name);
-            return NoContent();
+            var category = new CategoryObj();
+            try
+            {
+                category = await _categoryBAL.GetCategoryById(id);
+                if (category == null) return NotFound();
+                _logger.LogInformation("Record found {CategoryName}", category.Name);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return new JsonResult(new StandardResponse<CategoryObj>(
+                true,
+                "200",
+                "Retrieved GetById success",
+                category
+                ))
+            {
+                StatusCode = 200,
+            };
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpPost("create")]
+        public async Task<ActionResult<StandardResponse<CategoryObj>>> AddCategory([FromBody] CategoryObj categoryObj)
         {
-            var category = await _context.Categories.FindAsync(id);
-            if (category == null) return NotFound();
-            _context.Remove(category);
-            await _context.SaveChangesAsync();
-            _logger.LogInformation("Category deleted {CategoryName}",category.Name);
-            return NoContent();
-        
+            var category = new CategoryObj();
+            try
+            {
+                category = await _categoryBAL.AddCategory(categoryObj);
+                _logger.LogInformation("Category created: {CategoryName}", category.Name);
+                //return CreatedAtAction(nameof(GetById), new { id = category.Id }, category);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return new JsonResult(new StandardResponse<CategoryObj>(
+                true,
+                "200",
+                "Category has been added success",
+                category
+                ))
+            {
+                StatusCode = 200
+            };
         }
+
+        [HttpPut("update/{id}")]
+        public async Task<ActionResult<StandardResponse<CategoryObj>>> UpdateCategory(int id, [FromBody] CategoryObj categoryObj)
+        {
+            var category = new CategoryObj();
+            try
+            {
+                categoryObj.Id = id;
+                category = await _categoryBAL.UpdateCategory(categoryObj);
+                _logger.LogInformation("Category updated {CategoryName}", category.Name);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            return new JsonResult(new StandardResponse<CategoryObj>(
+                true,
+                "200",
+                "Category has been updated success",
+                category
+                ))
+            {
+                StatusCode = 200
+            };
+        }
+        [HttpDelete("delete/{id}")]
+        public async Task<ActionResult<StandardResponse<string>>> DeleteCategory(int id)
+        {
+            var retVal = string.Empty;
+            try
+            {
+                var category = await _categoryBAL.GetCategoryById(id);
+                if (category == null) return NotFound();
+                await _categoryBAL.DeleteCategory(id);
+                _logger.LogInformation("Category deleted {CategoryName}", category.Name);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+            return new JsonResult(new StandardResponse<string>(
+                    true,
+                    "200",
+                    "Category deleted success",
+                    ""
+                ))
+            {
+                StatusCode = 200
+            };
+        }
+
     }
-   
 }
