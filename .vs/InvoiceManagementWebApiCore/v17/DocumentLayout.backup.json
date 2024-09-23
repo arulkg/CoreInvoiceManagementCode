@@ -1,12 +1,69 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Core\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA203218-8298-49F1-8516-791DF1B8DB75}|InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore.csproj|c:\\core\\invoicemanagementwebapicore\\invoicemanagementwebapicore\\invoicemanagementwebapicore\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA203218-8298-49F1-8516-791DF1B8DB75}|InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore.csproj|solutionrelative:invoicemanagementwebapicore\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA203218-8298-49F1-8516-791DF1B8DB75}|InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore.csproj|c:\\core\\invoicemanagementwebapicore\\invoicemanagementwebapicore\\invoicemanagementwebapicore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA203218-8298-49F1-8516-791DF1B8DB75}|InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore.csproj|solutionrelative:invoicemanagementwebapicore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA203218-8298-49F1-8516-791DF1B8DB75}|InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore.csproj|c:\\core\\invoicemanagementwebapicore\\invoicemanagementwebapicore\\invoicemanagementwebapicore\\invoicemanagementwebapicore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DA203218-8298-49F1-8516-791DF1B8DB75}|InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore.csproj|solutionrelative:invoicemanagementwebapicore\\invoicemanagementwebapicore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InvoiceManagementWebApiCore.csproj",
+              "DocumentMoniker": "C:\\Core\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore.csproj",
+              "RelativeDocumentMoniker": "InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore.csproj",
+              "ToolTip": "C:\\Core\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore.csproj",
+              "RelativeToolTip": "InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore.csproj",
+              "ViewState": "AgIAAA0AAAAAAAAAAADwvx0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-22T19:57:11.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Core\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "InvoiceManagementWebApiCore\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Core\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "InvoiceManagementWebApiCore\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAwIcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T19:29:30.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Core\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\Program.cs",
+              "RelativeDocumentMoniker": "InvoiceManagementWebApiCore\\Program.cs",
+              "ToolTip": "C:\\Core\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\InvoiceManagementWebApiCore\\Program.cs",
+              "RelativeToolTip": "InvoiceManagementWebApiCore\\Program.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAYwEcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T17:30:21.095Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

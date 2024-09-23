@@ -42,22 +42,23 @@ builder.Services.AddScoped<ICategoryDAO, CategoryDAO>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+//builder.Services.AddSwaggerGen();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "AuthCore API", Version = "v1" });
-    var securityScheme = new OpenApiSecurityScheme
-    {
-        Name = "JWT Authentication",
-        Description = "Enter your JWT token in this field",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.Http,
-        Scheme = "bearer",
-        BearerFormat = "JWT"
-    };
+c.SwaggerDoc("v1", new OpenApiInfo { Title = "AuthCore API", Version = "v1" });
+var securityScheme = new OpenApiSecurityScheme
+{
+    Name = "JWT Authentication",
+    Description = "Enter your JWT token in this field",
+    In = ParameterLocation.Header,
+    Type = SecuritySchemeType.Http,
+    Scheme = "bearer",
+    BearerFormat = "JWT"
+};
 
-    c.AddSecurityDefinition("Bearer", securityScheme);
+c.AddSecurityDefinition("Bearer", securityScheme);
 
-    var securityRequirement = new OpenApiSecurityRequirement
+var securityRequirement = new OpenApiSecurityRequirement
     {
         {
             new OpenApiSecurityScheme
@@ -123,6 +124,7 @@ app.UseSerilogRequestLogging();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
+    //app.UseSwaggerUI();
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "AuthCore API V1");
@@ -133,6 +135,7 @@ if (app.Environment.IsDevelopment())
 // Register middleware for exception handling
 app.UseMiddleware<InvoiceManagementWebApiCore.Middlewares.ExceptionMiddleware>();
 
+app.UseCors("corsapp");
 
 app.UseAuthentication();
 app.UseAuthorization();
