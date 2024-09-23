@@ -90,7 +90,7 @@
   {
     "ContainingType": "InvoiceManagementWebApiCore.Controllers.CategoryController",
     "Method": "GetById",
-    "RelativePath": "api/Category/GetById/{id}",
+    "RelativePath": "api/Category/getbyid/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

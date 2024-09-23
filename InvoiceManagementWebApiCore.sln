@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.BusinessAccessLayer", "3.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.PresentationLayer", "4.PresentationLayer", "{B52BB296-4332-44A0-8B6A-7BC67929C055}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{10DBBF44-AC63-4DB8-98B7-CD7567647458}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{10DBBF44-AC63-4DB8-98B7-CD7567647458}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessObjects", "DataAccessObjects\DataAccessObjects.csproj", "{67CBC868-14CF-4D0B-9012-69B3C7F1FF3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessObjects", "DataAccessObjects\DataAccessObjects.csproj", "{67CBC868-14CF-4D0B-9012-69B3C7F1FF3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessAccessObjects", "BusinessAccessObjects\BusinessAccessObjects.csproj", "{C6E17E3C-1E9C-44B1-8AC7-B7BD5829231F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessAccessObjects", "BusinessAccessObjects\BusinessAccessObjects.csproj", "{C6E17E3C-1E9C-44B1-8AC7-B7BD5829231F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

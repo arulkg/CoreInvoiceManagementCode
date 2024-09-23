@@ -48,7 +48,7 @@ namespace InvoiceManagementWebApiCore.Controllers
             };
         }
 
-        [HttpGet("GetById/{id}")]
+        [HttpGet("getbyid/{id}")]
         public async Task<ActionResult<StandardResponse<CategoryObj>>> GetById(int id)
         {
             var category = new CategoryObj();
